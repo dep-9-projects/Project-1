@@ -1,0 +1,152 @@
+@import url(css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.clear-fix{
+    clear: both;
+}
+
+/* Typography */
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.9rem;
+}
+
+h1{
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+}
+h2{
+    font-size:1.6rem ;
+    line-height: 1.8rem;
+}
+
+h3{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+h4{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+h5{
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+h6{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+/* layout */
+
+:root{
+    --header-height:50px;
+    --nav-width:150px;
+    --layout-border-color:lightgray;
+}
+#header{
+    position: fixed;
+    background-color: rgba(255, 255,255,0.87);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    border-bottom: 1px solid var(--layout-border-color)
+
+
+}
+#nav{
+    position:fixed;
+    background-color:green;
+    top: var(--header-height);
+    width: var(--nav-width);
+    left: 0;
+    bottom: 0;
+    border-right:1px solid var(--layout-border-color);
+
+}
+
+#main{
+    background-color: red;
+    margin-left: var(--nav-width);
+    margin-top: var(--header-height);
+}
+#container{
+    padding: 10px;
+}
+#footer{
+    text-align: center;
+    padding: 10px 10px 10px;
+    border-top: 1px solid var(--layout-border-color);
+    background-color: var(--layout-border-color);
+
+}
+#logo{
+    padding-left: 10px;
+}
+#smi-container{
+    /* background-color: rebeccapurple; */
+    float: right;
+    height: var(--header-height);
+    
+}
+#smi-container .smi-icons{
+    float: left;
+    height: 100%;
+    width: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* background-color: green; */
+    padding: 15px 10px;
+    transition: background-color 600ms,width 600ms;
+    font-weight: 500;
+}
+#smi-container .smi-icons:hover{
+    background-color: aquamarine;
+}
+
+#smi-container .smi-icons ion-icon{
+    font-size: 1.3rem;
+    color: #666;
+    padding-right: 10px;
+    vertical-align: sub;
+}
+#smi-container .smi-icons:hover{
+    color: white;
+    width: 125px;
+
+}
+#smi-container .smi-icons:hover ion-icon{
+    color: white;
+
+}
+#smi-container .smi-icons:nth-child(1):hover{
+    background-color: #3b5998;
+}
+#smi-container .smi-icons:nth-child(2):hover{
+    background-color: #0e76a8;
+}
+#smi-container .smi-icons:nth-child(3):hover{
+    background-color: #00acee;
+}
+#smi-container .smi-icons:nth-child(4):hover{
+    background-color: #3f729b;
+}
+#smi-container .smi-icons:nth-child(5):hover{
+    background-color: #c4302b;
+}
+#smi-container .smi-icons:nth-child(6):hover{
+    background-color: #444;
+}
+#smi-container .smi-icons:nth-child(7):hover{
+    background-color: #6567a5;
+}
+#smi-container .smi-icons:not(.smi-icons:last-child){
+    border-right: 1px solid var(--layout-border-color);
+}
