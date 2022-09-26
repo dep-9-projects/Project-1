@@ -1,2 +1,45 @@
 
 @import url(../style.css);
+
+#container{
+    padding: 10px;
+}
+#row-1{
+    color: #666;
+}
+#row-1>div{
+    float: left;
+}
+#row-1>div:first-child{
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+}
+
+#row-1>div:last-child{
+        background-image: url(https://www.ijse.lk/images/home/welcome.jpg);
+        width: 30%;
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+#row-1>div:first-child h1,#row-1>div:first-child h2{
+    padding-bottom: 15px;
+}
+#row-1>div:first-child p{
+    padding-bottom: 20px;
+    line-height: 1.3rem;
+}
+#row-2{
+    text-align: center;
+    padding: 15px;
+}
+#row-2 span{
+    color: red;
+    font-weight: bold;
+}
+#row-3{
+    line-height: 1.4rem;
+    color: #666;
+    text-align: center;
+}
